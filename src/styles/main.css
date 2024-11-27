@@ -1,11 +1,19 @@
 /* Configuração geral */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #000; /* Garante fundo preto, sem faixa branca */
+}
+
 .container {
   display: flex;
   flex-direction: column;
   height: 100vh;
   background-image: url("../images/wall.png");
-
- 
+   background-position: center;
+  margin: 0; /* Garante que não há margem */
+  padding: 0; /* Garante que não há padding extra */
 }
 
 /* Menu superior */
@@ -20,13 +28,14 @@
   border-bottom: 5px solid #ffd700;
 }
 
-
 /* Painel principal com os quadrados */
 .panel {
   margin-top: 1rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 0; /* Remover padding adicional do painel */
+  margin: 0; /* Remover margens extras do painel */
 }
 
 /* Quadrados do painel */
@@ -64,7 +73,7 @@
   width: 300px;
   text-align: center;
   font-family: "Press Start 2P", cursive;
-  display:grid;
+  display: grid;
   z-index: 1000;
 }
 
@@ -80,7 +89,7 @@
 .modal-content button {
   margin-top: 15px;
   background-color: #ff4500;
-  color: white;
+  color: #ffffff;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -98,7 +107,7 @@
   top: 30px;
   left: 10px;
   background-color: #ff4500;
-  color: white;
+  color: #ffffff;
   padding: 10px 20px;
   font-family: "Press Start 2P", cursive;
   border: none;
@@ -111,9 +120,9 @@
 }
 
 .menu-lifes {
-display: flex;
-align-items: center;
-justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .menu-time h2:nth-child(2),
